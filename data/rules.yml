@@ -1,0 +1,285 @@
+version: "3.1"
+rules:
+- rule: greet
+  steps:
+    - intent: greet
+    - action: utter_greet
+
+- rule: how_are_you
+  steps:
+    - intent: how_are_you
+    - action: utter_how_are_you
+
+- rule: greet_howareyou
+  steps:
+    - intent: greet_howareyou
+    - action: utter_greet_howareyou
+
+- rule: goodbye
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+- rule: appreciation
+  steps:
+    - intent: appreciation
+    - action: utter_appriciation
+
+- rule: insult
+  steps:
+    - intent: insult
+    - action: utter_insult
+
+- rule: out_of_scope
+  steps:
+    - intent: out_of_scope
+    - action: utter_out_of_scope
+
+- rule: about
+  steps:
+    - intent: about
+    - action: utter_about
+
+- rule: funny
+  steps:
+    - intent: funny
+    - action: utter_funny
+
+- rule: bot_feeling
+  steps:
+    - intent: bot_feeling
+    - action: utter_bot_feeling
+
+- rule: irrelevant_requests
+  steps:
+    - intent: irrelevant_requests
+    - action: utter_irrelevant_requests
+
+- rule: smalltalk
+  steps:
+    - intent: smalltalk
+    - action: utter_smalltalk
+
+- rule: assurance
+  steps:
+    - intent: assurance
+    - action: utter_assurance
+
+- rule: misunderstood
+  steps:
+    - intent: misunderstood
+    - action: utter_misunderstood    
+
+- rule: user_says_bad
+  steps:
+    - intent: user_says_bad
+    - action: utter_user_says_bad
+    
+- rule: new_student
+  steps:
+    - intent: new_student
+    - action: utter_new_student
+- rule: پاسخ به سوال آدرس دانشگاه پیام نور ارومیه
+  steps:
+    - intent: faq_address_pnu_urmia
+    - action: utter_faq_address_pnu_urmia
+- rule: آدرس سایت گلستان
+  steps:
+    - intent: faq_golestan_link
+    - action: utter_faq_golestan_link
+- rule: چارت درسی
+  steps:
+    - intent: faq_course_chart
+    - action: utter_faq_course_chart
+- rule: درخواست مهمانی
+  steps:
+    - intent: faq_guest_request
+    - action: utter_faq_guest_request
+- rule: مهمانی دائم و  موقت
+  steps:
+    - intent: faq_permanent_guest
+    - action: utter_faq_permanent_guest
+- rule: تغییر رشته
+  steps:
+    - intent: faq_change_major
+    - action: utter_faq_change_major
+- rule: انتخاب واحد
+  steps:
+    - intent: faq_course_selection_time
+    - action: utter_faq_course_selection_time
+- rule: حذف و اضافه
+  steps:
+    - intent: faq_course_selection_adddrop
+    - action: utter_faq_course_selection_adddrop
+- rule: قفل شدن گلستان
+  steps:
+    - intent: faq_golestan_locked_payment
+    - action: utter_faq_golestan_locked_payment
+- rule: معادل سازی
+  steps:
+    - intent: faq_course_equivalency
+    - action: utter_faq_course_equivalency
+- rule: سیستم آموزشی
+  steps:
+    - intent: faq_education_system
+    - action: utter_faq_education_system
+- rule: ریلاین
+  steps:
+    - intent: faq_lms_reline_online
+    - action: utter_faq_lms_reline_online
+- rule: گزارش 101
+  steps:
+    - intent: faq_golestan_report101
+    - action: utter_faq_golestan_report101
+- rule: گزارش 272
+  steps:
+    - intent: faq_golestan_report272
+    - action: utter_faq_golestan_report272
+- rule: گزارش 423
+  steps:
+    - intent: faq_golestan_report423
+    - action: utter_faq_golestan_report423
+- rule: گزارش 428
+  steps:
+    - intent: faq_golestan_report428
+    - action: utter_faq_golestan_report428
+- rule: ارزشیابی اساتید
+  steps:
+    - intent: faq_golestan_professor_evaluation
+    - action: utter_faq_golestan_professor_evaluation
+- rule: تغییر محل آزمون
+  steps:
+    - intent: faq_exam_location_meaning
+    - action: utter_faq_exam_location_meaning
+- rule: نمره دروس تئوری
+  steps:
+    - intent: faq_exam_theory_scores
+    - action: utter_faq_exam_theory_scores
+- rule: دروس ارائه شده
+  steps:
+    - intent: faq_golestan_report102
+    - action: utter_faq_golestan_report102
+- rule: شهریه برای انتخاب واحد
+  steps:
+    - intent: faq_tuition_fixed_payment
+    - action: utter_faq_tuition_fixed_payment
+- rule: گواهی اشتغال به تحصیل
+  steps:
+    - intent: faq_golestan_study_certificate
+    - action: utter_faq_golestan_study_certificate
+- rule: درخواست تغییر رشته
+  steps:
+    - intent: faq_golestan_change_major_request
+    - action: utter_faq_golestan_change_major_request
+- rule: ترم آخر
+  steps:
+    - intent: faq_final_term_request
+    - action: utter_faq_final_term_request
+- rule: معرفی به استاد
+  steps:
+    - intent: faq_course_introduction_to_professor
+    - action: utter_faq_course_introduction_to_professor
+- rule: تمدید سنوات
+  steps:
+    - intent: faq_study_extension_male_students
+    - action: utter_faq_study_extension_male_students
+- rule: مرخصی تحصیلی
+  steps:
+    - intent: faq_academic_leave_duration
+    - action: utter_faq_academic_leave_duration
+- rule: نتایج آزمون دانشجو
+  steps:
+    - intent: faq_golestan_exam_results
+    - action: utter_faq_golestan_exam_results
+- rule: واحد های مهندسی کامپیوتر
+  steps:
+    - intent: faq_cs_total_units
+    - action: utter_faq_cs_total_units
+- rule: بسته های تخصصی
+  steps:
+    - intent: faq_cs_specialization_packages
+    - action: utter_faq_cs_specialization_packages
+- rule: درس های مشترک
+  steps:
+    - intent: faq_cs_duplicate_courses_in_packages
+    - action: utter_faq_cs_duplicate_courses_in_packages
+- rule: دروس اختیاری
+  steps:
+    - intent: faq_cs_elective_courses_units
+    - action: utter_faq_cs_elective_courses_units
+- rule: دروس اختیاری مازاد
+  steps:
+    - intent: faq_cs_additional_elective_courses
+    - action: utter_faq_cs_additional_elective_courses
+- rule: حفظ جزء سی قرآن
+  steps:
+    - intent: faq_quran_course_info
+    - action: utter_faq_quran_course_info
+- rule: تربیت بدنی ویژه
+  steps:
+    - intent: faq_special_physical_education_courses
+    - action: utter_faq_special_physical_education_courses
+- rule: درس های تفسیر
+  steps:
+    - intent: faq_quran_nahj_course_selection
+    - action: utter_faq_quran_nahj_course_selection
+- rule: درس های اخلاق
+  steps:
+    - intent: faq_ethics_courses_selection
+    - action: utter_faq_ethics_courses_selection
+- rule: کارآموزی
+  steps:
+    - intent: faq_internship_location_and_conditions
+    - action: utter_faq_internship_location_and_conditions
+- rule: اتمام کارآموزی
+  steps:
+    - intent: faq_internship_report_submission
+    - action: utter_faq_internship_report_submission
+- rule: پروژه پایانی
+  steps:
+    - intent: faq_final_project_types
+    - action: utter_faq_final_project_types
+- rule: اسم بسته ها
+  steps:
+    - intent: faq_cs_specialization_packages_list
+    - action: utter_faq_cs_specialization_packages_list
+- rule: فراموش کردن رمز گلستان
+  steps:
+    - intent: faq_golestan_password_reset
+    - action: utter_faq_golestan_password_reset
+- rule: نمره قبولی
+  steps:
+    - intent: faq_exam_passing_grade_9_5
+    - action: utter_faq_exam_passing_grade_9_5
+- rule: غیبت در امتحان
+  steps:
+    - intent: faq_exam_absence_effect
+    - action: utter_faq_exam_absence_effect
+- rule: فارغ‌التحصیلی
+  steps:
+    - intent: faq_graduation_request
+    - action: utter_faq_graduation_request
+- rule: ورود به ریلاین
+  steps:
+    - intent: faq_reline_login_credentials
+    - action: utter_faq_reline_login_credentials
+- rule: تعداد انتخاب واحد
+  steps:
+    - intent: faq_minimum_units_per_semester
+    - action: utter_faq_minimum_units_per_semester
+- rule: حذف اضطراری
+  steps:
+    - intent: faq_emergency_removal
+    - action: utter_faq_emergency_removal
+- rule: اعتراض به نمره
+  steps:
+    - intent: faq_objection
+    - action: utter_faq_objection
+- rule: وام دانشجویی
+  steps:
+    - intent: faq_student_loan
+    - action: utter_faq_student_loan
+- rule: پاسخ به سوال درباره‌ی درس
+  steps:
+    - intent: ask_course_info
+    - action: action_course_info

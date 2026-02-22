@@ -1,0 +1,18 @@
+# ===== RASA / PYTHON =====
+.venv/
+.rasa/
+__pycache__/
+*.pyc
+models/
+results/
+
+# ===== ENV FILES =====
+.env
+
+# ===== REACT FRONTEND =====
+pnu-chatbot/node_modules/
+pnu-chatbot/build/
+
+# ===== GENERAL =====
+.DS_Store
+Thumbs.db
